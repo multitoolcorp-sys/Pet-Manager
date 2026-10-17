@@ -1,0 +1,33 @@
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Vercel & IDE
+.vercel
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+test_*.py
+
+# Vercel config
+vercel.json
+
+# Local temporary backups
+_backup_endpoints/

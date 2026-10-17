@@ -4,7 +4,8 @@ from api.v1.endpoints import (
     list_pets,
     get_pet,
     update_pet,
-    delete_pet
+    delete_pet,
+    search_pets
 )
 
 api_router = APIRouter(prefix="/mascotas", tags=["Mascotas"])
@@ -14,3 +15,4 @@ api_router.include_router(list_pets.router)
 api_router.include_router(get_pet.router)
 api_router.include_router(update_pet.router)
 api_router.include_router(delete_pet.router)
+api_router.include_router(search_pets.router)

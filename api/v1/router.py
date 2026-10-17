@@ -8,7 +8,8 @@ from api.v1.endpoints import (
     search_pets,
     filter_species,
     filter_breed,
-    filter_status
+    filter_status,
+    veterinary_records
 )
 
 api_router = APIRouter(prefix="/mascotas", tags=["Mascotas"])
@@ -22,3 +23,4 @@ api_router.include_router(search_pets.router)
 api_router.include_router(filter_species.router)
 api_router.include_router(filter_breed.router)
 api_router.include_router(filter_status.router)
+api_router.include_router(veterinary_records.router)
